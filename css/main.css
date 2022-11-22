@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+
+.contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 30px;
+}
+.overlay-effect{
+  position: relative;
+ 
+  overflow: hidden;
+}
+
+.overlay-img{
+  display: block;
+}
+
+.overlay-top{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  background-color: #008CBA;
+  color: #000;
+  font-family: sans-serif;
+  transition: transform 0.7s cubic-bezier(0.37, 0.93, 1, 0.07);
+  transform: translateY(-300px);
+}
+
+
+.overlay-effect:hover .overlay-top{
+  transform: translateY(0);
+  /* transform: scale(1) rotate(0); */
+  
+}
+
+
+
+.overlay-bottom{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  background-color: #008CBA;
+  color: #000;
+  font-family: sans-serif;
+  transition: transform 0.7s cubic-bezier(0.37, 0.93, 1, 0.07);
+  transform: translateY(300px);
+}
+
+
+.overlay-effect:hover .overlay-bottom{
+  transform: translateY(0);
+  /* transform: scale(1) rotate(0); */
+  
+}
+
+
+.overlay-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  background-color: #008CBA;
+  color: #000;
+  font-family: sans-serif;
+  transition: transform 0.7s cubic-bezier(0.37, 0.93, 1, 0.07);
+  transform: translateX(300px);
+}
+
+
+.overlay-effect:hover .overlay-right{
+  transform: translateX(0);
+  /* transform: scale(1) rotate(0); */
+  
+}
+
+
+.overlay-left{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  background-color: #008CBA;
+  color: #000;
+  font-family: sans-serif;
+  transition: transform 0.7s cubic-bezier(0.37, 0.93, 1, 0.07);
+  transform: translateX(-300px);
+}
+
+
+.overlay-effect:hover .overlay-left{
+  transform: translateX(0);
+  /* transform: scale(1) rotate(0); */
+  
+}
